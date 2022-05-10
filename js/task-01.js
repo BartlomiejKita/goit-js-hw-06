@@ -1,3 +1,5 @@
+"use strict";
+
 const numOfCat = document.querySelectorAll(".item");
 console.log(`Number of categories: ${numOfCat.length}`);
 
@@ -15,3 +17,13 @@ const thirdCat = document.getElementsByTagName("h2")[2];
 console.log(`Category: ${thirdCat.innerText}`);
 const thirdList = thirdCat.nextElementSibling.children;
 console.log(`Elements: ${thirdList.length}`);
+
+//second solution
+
+const numberOfCategories = document.querySelectorAll(".item");
+console.log(`Number of categories: ${numberOfCategories.length}`);
+
+numberOfCategories.forEach((item) => {
+	console.log(`Category: ${item.firstElementChild.textContent}`);
+	console.log(`Elements: ${item.querySelectorAll("li").length}`);
+});
