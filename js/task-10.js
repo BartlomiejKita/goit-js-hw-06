@@ -12,7 +12,7 @@ btnDestroy.addEventListener("click", destroyBoxes);
 
 let boxSize = 20;
 function createBoxes() {
-	for (let i = 0; i <= numberOfBoxes.value; i++) {
+	for (let i = 0; i < numberOfBoxes.value; i++) {
 		boxSize += 10;
 		let newColor = getRandomHexColor();
 
