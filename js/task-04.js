@@ -1,20 +1,12 @@
+"use strict";
+
+const btnMinus = document.querySelector('[data-action="decrement"]');
+const btnPlus = document.querySelector('[data-action="increment"]');
+const value = document.querySelector("#value");
+
 let counterValue = 0;
+const decrement = () => (value.innerHTML = counterValue -= 1);
+const increment = () => (value.innerHTML = counterValue += 1);
 
-const totalValue = document.getElementById("value");
-totalValue.innerHTML = counterValue;
-
-const increment = () => {
-	counterValue++;
-	totalValue.innerHTML = counterValue;
-};
-
-const decrement = () => {
-	counterValue--;
-	totalValue.innerHTML = counterValue;
-};
-
-const btnIncrement = document.querySelector('[data-action="increment"]');
-const btnDecrement = document.querySelector('[data-action="decrement"]');
-
-btnIncrement.addEventListener("click", increment);
-btnDecrement.addEventListener("click", decrement);
+btnPlus.addEventListener("click", increment);
+btnMinus.addEventListener("click", decrement);

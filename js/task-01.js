@@ -20,10 +20,21 @@
 
 //second solution
 
-const numberOfCategories = document.querySelectorAll(".item");
-console.log(`Number of categories: ${numberOfCategories.length}`);
+// const numberOfCategories = document.querySelectorAll(".item");
+// console.log(`Number of categories: ${numberOfCategories.length}`);
 
-numberOfCategories.forEach((item) => {
-	console.log(`Category: ${item.firstElementChild.textContent}`);
-	console.log(`Elements: ${item.querySelectorAll("li").length}`);
+// numberOfCategories.forEach((item) => {
+// 	console.log(`Category: ${item.firstElementChild.textContent}`);
+// 	console.log(`Elements: ${item.querySelectorAll("li").length}`);
+// });
+
+//third solution
+
+const nodes = document.querySelectorAll(".item");
+
+console.log(`Number of categories: ${nodes.length}`);
+
+nodes.forEach((node) => {
+	console.log(`Category: ${node.firstElementChild.innerText}`);
+	console.log(`Elements: ${node.lastElementChild.children.length}`);
 });

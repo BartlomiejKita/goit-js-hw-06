@@ -1,10 +1,12 @@
-const nameIn = document.querySelector("#name-input");
-const nameOut = document.querySelector("#name-output");
+"use strict";
+const input = document.querySelector("#name-input");
+const output = document.querySelector("#name-output");
 
-nameIn.addEventListener("input", (event) => {
-	if (nameIn.value == "") {
-		nameOut.textContent = "Anonymous";
+const check = () => {
+	if (input.value.length > 0) {
+		output.innerHTML = input.value;
 	} else {
-		nameOut.textContent = event.currentTarget.value;
+		output.innerHTML = "Anonymous";
 	}
-});
+};
+input.addEventListener("input", check);
