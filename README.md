@@ -30,4 +30,4 @@
  
 ### Criteria
 
-[link]([https://github.com/goitacademy/javascript-homework/blob/main/v2/06/README.pl.md](https://github.com/goitacademy/javascript-homework/blob/main/v2/06/README.en.md))
+[link](https://github.com/goitacademy/javascript-homework/blob/main/v2/06/README.en.md )
