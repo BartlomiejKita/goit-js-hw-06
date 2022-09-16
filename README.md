@@ -3,17 +3,17 @@
 
 ## General info
 
-:star: document.querySelector
+:boom: document.querySelector
 
-:star: console.log()
+:boom: console.log()
 
-:star: for, forEach
+:boom: for, forEach
 
-:star: document.createElement()
+:boom: document.createElement()
 
-:star: insertAdjacentHTML()
+:boom: insertAdjacentHTML()
 
-:star: addEventListener and event delegation
+:boom: addEventListener and event delegation
 
 
 ## Technologies
